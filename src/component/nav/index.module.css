@@ -1,0 +1,145 @@
+.nav {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 100%;
+
+    z-index: 101;
+    min-height: 64px;
+
+    background-color: var(--navBg, transparent);
+    backdrop-filter: var(--navFilter, unset);
+    box-shadow: var(--navShadow, unset);
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    perspective: 1000;
+
+    transition: all 0.2s ease;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 0 24px;
+    margin: auto;
+}
+.navStaticListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5px;
+}
+.navSideContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.navButton {
+    display: inline-block;
+    padding: 8px;
+
+    color: #888;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    font-size: 14px;
+
+    transition: color 0.1s ease;
+    cursor: pointer;
+    outline: none;
+}
+.navButton:hover {
+    color: white;
+}
+
+.popoverButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.popoverButtonContainer > svg {
+    transition: all ease 0.2s;
+    transform: rotate(var(--btnRotation));
+}
+
+.popOverContainer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 63px;
+    padding: 2rem 1rem;
+    border-top: 1px solid #333;
+    border-bottom: 2px solid #333;
+
+    transition: all 0.2s ease;
+
+    background-color: black;
+
+    display: var(--popoverDisplay, none);
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: var(--geist-space-2x);
+    gap: var(--geist-space-2x);
+}
+
+.popOverInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 1rem;
+
+    padding: 0 1.25rem;
+
+    border-radius: 5px;
+
+    position: relative;
+    overflow: hidden;
+    height: 90px;
+
+    transition: 0.1s ease;
+    border: 1px solid transparent;
+}
+.popOverInfoContainer:hover {
+    border-color: #333;
+    background-color: #111;
+}
+
+.popOverInfoIconContainer {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.popOverInfoContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: initial;
+
+    gap: 0.25rem;
+}
