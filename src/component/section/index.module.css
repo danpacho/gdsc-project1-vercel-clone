@@ -1,0 +1,40 @@
+.layout {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1.4fr 0.2fr 1.4fr;
+    grid-template-areas:
+        "featured featured"
+        "major-feat-0 minor-feat-1"
+        "major-feat-0 major-feat-1"
+        "minor-feat-0 major-feat-1";
+    gap: 16px;
+    grid-gap: 16px;
+
+    perspective: 1500px;
+    min-height: 680px;
+}
+
+.gridFeatured {
+    grid-area: featured;
+}
+
+.gridMajor0 {
+    grid-area: major-feat-0;
+}
+
+.gridMajor1 {
+    grid-area: major-feat-1;
+}
+
+.gridMinor0 {
+    grid-area: minor-feat-0;
+}
+
+.gridMinor1 {
+    grid-area: minor-feat-1;
+}
