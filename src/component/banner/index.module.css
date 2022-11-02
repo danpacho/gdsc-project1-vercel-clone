@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    margin-top: -64px;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+@keyframes fadeIn {
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.img {
+    position: absolute;
+    top: -400px;
+    z-index: -100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 900px;
+    width: 900px;
+
+    aspect-ratio: 1/1;
+    transform: translateY(-100px);
+    opacity: 0;
+    pointer-events: none;
+    filter: blur(10px);
+    -webkit-animation: fadeIn 0.8s ease forwards;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.mainContainer {
+    position: relative;
+    text-align: center;
+    padding: 0 32px;
+    margin-top: 350px;
+    z-index: 2;
+}
+
+.contentContainer {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 32px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoContainer > svg {
+    width: 200px;
+    height: 40px;
+}
+
+.back {
+    background: linear-gradient(180deg, transparent 0, #000 20%);
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    top: -50px;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    margin-top: 2.5rem;
+}
