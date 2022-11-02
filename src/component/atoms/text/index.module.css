@@ -1,0 +1,52 @@
+.lg {
+    font-size: 24px;
+}
+.md {
+    font-size: 20px;
+}
+.sm {
+    font-size: 14px;
+}
+.hypen {
+    display: block;
+}
+
+.p {
+    color: #888;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: -0.2px;
+
+    margin: 0;
+    max-width: 100%;
+}
+
+.bold {
+    color: #eaeaea;
+    font-weight: 600;
+
+    margin: 0;
+    max-width: 100%;
+}
+
+.code {
+    color: #d3e5ff;
+    background: rgba(211, 229, 255, 0.15);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.head {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    line-height: 100px;
+    text-align: center;
+
+    margin: 1rem 0;
+    background: linear-gradient(180deg, #fff, #aaa);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
