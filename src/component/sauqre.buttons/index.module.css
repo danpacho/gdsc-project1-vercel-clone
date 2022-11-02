@@ -1,0 +1,43 @@
+.square {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid white;
+
+    color: black;
+    font-weight: 500;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    line-height: 1.5rem;
+
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: border-color, background, color, transform, box-shadow;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.md {
+    padding: 0 12px;
+    height: 48px;
+
+    font-size: 1rem;
+}
+.sm {
+    padding: 4px 10px;
+    height: fit-content;
+
+    font-size: 14px;
+}
+
+.square:hover {
+    background: black;
+    color: white;
+}
